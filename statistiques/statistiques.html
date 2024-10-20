@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques de Vol</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #46998aa3 10%, #fecfef 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #000000;
+            overflow: hidden;
+        }
+        .stats-table {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: bounceIn 1.5s ease-in-out;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            font-size: 1.2em;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 10px 0;
+            animation: fadeInUp 2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        th {
+            background-color: #ff6b6b;
+            color: rgb(0, 0, 0);
+            font-size: 1.3em;
+        }
+        td {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #fff;
+            animation: fadeIn 3s ease-in-out;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Optionnel pour améliorer la lisibilité */
+            padding: 10px 0;
+            box-sizing: border-box;
+            opacity: 50%;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes bounceIn {
+            0%, 20%, 50%, 80%, 100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40% {
+                -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+            }
+            60% {
+                -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+        }
+        .sidebar {
+            background: rgba(255, 255, 255, 0.1);
+            color: #000000;
+            width: 250px;
+            min-height: 100%;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 2s ease-in-out;
+            box-sizing: border-box; /* Assure que le padding ne déborde */
+        }
+        .sidebar h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: bounceIn 1.5s ease-in-out;
+        }
+        .sidebar nav a {
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+            transition: background-color 0.3s;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+        .sidebar nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <h1>Lagard’évasion</h1>
+        <nav>
+            <a href="C:\Users\x\Desktop\•Nathan•\Blog Voyage\Site web\index.html">Accueil</a>
+           
+            
+            <a href="C:\Users\x\Desktop\•Nathan•\Blog Voyage\Site web\statistiques\statistiques.html">Statistiques</a>
+            <a href="C:\Users\x\Desktop\•Nathan•\Blog Voyage\Site web\destinations.html">Destinations</a>
+            <a href="C:\Users\x\Desktop\•Nathan•\Blog Voyage\Site web\a_propos.html">À Propos</a>
+        </nav>
+    </aside>
+
+
+    <div class="stats-table">
+        <h1>Statistiques de Vol</h1>
+        <table>
+            <tr>
+                <th>
+                    <a href="heuresdevol.html" style="color: #fff; text-decoration: none;">
+                        <img src="https://img.icons8.com/doodle/48/000000/airplane-take-off.png" alt="Heures de vol" class="icon">
+                        Total d'heures de vol
+                    </a>
+                </th>
+                <td>708 h</td>
+            </tr>
+            <tr>
+                <th>
+                    <a href="distance.html" style="color: #fff; text-decoration: none;">
+                        <img src="https://img.icons8.com/doodle/48/000000/route.png" alt="Distance parcourue" class="icon">
+                        Distance parcourue
+                    </a>
+                </th>
+                <td>578 800 km</td>
+            </tr>
+            <tr>
+                <th>
+                    <a href="terre-lune.html" style="color: #fff; text-decoration: none;">
+                        <img src="https://img.icons8.com/doodle/48/000000/rocket.png" alt="Fusée" class="icon">
+                        Distance Terre-Lune
+                    </a>
+                </th>
+                <td>1,5</td>
+            </tr>
+            <tr>
+                <th>
+                    <a href="tourdumonde.html" style="color: #fff; text-decoration: none;">
+                        <img src="https://img.icons8.com/doodle/48/000000/globe-earth.png" alt="Tours du Monde" class="icon">
+                        Tours du Monde (Équateur)
+                    </a>
+                </th>
+                <td>14,4</td>
+            </tr>
+            <tr>
+                <th>
+                    <a href="jours.html" style="color: #fff; text-decoration: none;">
+                        <img src="https://img.icons8.com/doodle/48/000000/calendar.png" alt="Jours" class="icon">
+                        Jours
+                    </a>
+                </th>
+                <td>29,5 jours</td>
+            </tr>
+        </table>
+    </div>
+   
+    <div class="footer">
+        &copy; 2024 Lagard'évasion. Tous droits réservés.
+    </div>
+
+</body>
+</html>

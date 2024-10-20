@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total d'heures de vol</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #46998aa3 10%, #fecfef 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            color: #000000;
+        }
+        .sidebar {
+            background: rgba(255, 255, 255, 0.1);
+            color: #000000;
+            width: 250px;
+            min-height: 100%;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 2s ease-in-out;
+            box-sizing: border-box; /* Assure que le padding ne déborde */
+        }
+        .sidebar h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: bounceIn 1.5s ease-in-out;
+        }
+        .sidebar nav a {
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+            transition: background-color 0.3s;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+        .sidebar nav a:hover {
+            background-color: #555;
+        }
+        .details-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 600px;
+            margin: auto; /* Centrer le conteneur sur la page */
+            text-align: center;
+            backdrop-filter: blur(10px);
+            margin-top: 80px; /* Ajuste la marge supérieure si besoin */
+        }
+        .details-container img {
+            margin-top: 20px;
+            max-width: 60%; /* Taille de l'image réduite à 60% de la largeur du conteneur */
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* Assure que le padding ne déborde */
+        }
+        .details-container a {
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            background-color: #000; /* Couleur de fond pour mieux distinguer le lien */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .details-container a:hover {
+            background-color: #444;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #fff;
+            padding: 10px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <h1>Lagard’évasion</h1>
+        <nav>
+            <a href="C:\Users\x\Desktop\•Nathan•\Blog Voyage\Site web\index.html">Accueil</a>
+           
+            
+            <a href="C:\Users\x\Desktop\•Nathan•\Blog Voyage\Site web\statistiques\statistiques.html">Statistiques</a>
+            <a href="C:\Users\x\Desktop\•Nathan•\Blog Voyage\Site web\destinations.html">Destinations</a>
+            <a href="C:\Users\x\Desktop\•Nathan•\Blog Voyage\Site web\a_propos.html">À Propos</a>
+        </nav>
+    </aside>
+
+    <div class="details-container">
+        <h1>Distance parcourue</h1>
+        <p>578 800 km, ça équivaut à environ 720 trajets aller-retour entre Paris et New York. On pourriez faire ce voyage presque deux fois par jour pendant un an !</p>
+        <img src="C:\Users\x\Desktop\•Nathan•\Blog Voyage\Site web\statistiques\distance.jpg" alt="Heures de vol">
+        <a href="statistiques.html" style="color: #fff;">Retour</a>
+    </div>
+
+    <div class="footer">
+        
+        <p>&copy; 2024 Lagard'évasion. Tous droits réservés.</p>
+    </div>
+
+</body>
+</html>
